@@ -1,0 +1,152 @@
+body {
+    overflow-x: hidden;
+}
+
+a,
+i,
+span {
+    display: inline-block;
+    text-decoration: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+button,
+input {
+    outline: none !important;
+}
+
+.btn {
+    background: rgba(00, 100, 00, 0.9);
+    color: white;
+}
+
+.btn:hover {
+    color: white;
+    opacity: 0.8;
+}
+
+.page {
+    background: #EEF5F9;
+}
+
+.page .text-white {
+    color: #fff;
+}
+
+.page {
+    overflow-x: hidden;
+}
+
+.has-shadow {
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -1px 0 2px rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -1px 0 2px rgba(0, 0, 0, 0.05);
+}
+
+input.input-material {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+input.input-material:focus {
+    border-color: rgba(00, 100, 00, 0.9);
+}
+
+input.input-material ~ label {
+    color: #aaa;
+    position: absolute;
+    top: 14px;
+    left: 0;
+    cursor: text;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    font-weight: 300;
+}
+input.input-material ~ label.active {
+    font-size: 0.8rem;
+    top: -10px;
+    background: rgba(00, 100, 00, 0.9);
+}
+.login-page {
+    position: relative;
+}
+.login-page::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-size: cover;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.login-page .container {
+    min-height: 100vh;
+    z-index: 999;
+    padding: 20px;
+    position: relative;
+}
+
+.login-page .form-holder {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.login-page .form-holder .info, .login-page .form-holder .form {
+    min-height: 70vh;
+    padding: 40px;
+    height: 100%;
+}
+
+.login-page .form-holder div[class*='col-'] {
+    padding: 0;
+}
+
+.login-page .form-holder .info {
+    background: rgba(00, 100, 00, 0.9);
+    color: #fff;
+}
+
+.login-page .form-holder .info h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.login-page .form-holder .info p {
+    font-weight: 300;
+}
+
+.login-page .form-holder .form .form-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.login-page .form-holder .form .content {
+    width: 100%;
+}
+
+.login-page .form-holder .form form {
+    width: 100%;
+    max-width: 400px;
+}
+
+
+@media (max-width: 991px) {
+    .login-page .info, .login-page .form {
+        min-height: auto !important;
+    }
+
+    .login-page .info {
+        padding-top: 100px !important;
+        padding-bottom: 100px !important;
+    }
+}
